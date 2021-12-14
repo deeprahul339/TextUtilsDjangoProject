@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>RTextUtils</title>
+<style>
+  textarea{
+    margin: 0px;
+     width: 702px; 
+     height: 109px;  
+  }
+  button{
+    width: 100px;
+    height: 25px;
+    margin: 0;
+    padding;
+  }  
+</style>
+</head>
+<body>
+    <h1>Welcome to the text analyzer. Enter your text below</h1>
+
+<form action='/analyze' method='get'>
+    
+    <textarea name='text'></textarea><br>
+    <input type="checkbox" name='removepunc'>Remove Punctuations<br>
+    <input type="checkbox" name='fullcaps'>UPPERCASE<br>
+    <input type="checkbox" name='newlineremover'>Newline Remover<br>
+    <input type="checkbox" name='extraspaceremover'>Extra Space Remover<br>
+    <input type="checkbox" name='charactercounter'>Character Counter<br>
+    <button type='submit'>Analyze Text</button>
+
+</form>
+</body>   
+</html>
